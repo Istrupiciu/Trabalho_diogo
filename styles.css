@@ -1,11 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url("./img/wallpaper.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("./img/wallpaper.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 nav {
@@ -19,15 +23,14 @@ nav {
 }
 
 h1 {
-  margin: 0;
-  font-size: 24px;
+    margin: 0;
+    font-size: 24px;
 }
 
-main {
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+section {
+    max-width: 100vw;
+    padding: 20px;
+    justify-content: center;
 }
 
 .logo {
@@ -44,10 +47,9 @@ main {
 }
 
 .pesquisa {
-    position: relative;
     margin: auto;
     margin-right: 0px;
-    height: 20px;
+    height: 35px;
     width: 500px;
     padding: 5px;
     border-radius: 10px;
@@ -64,6 +66,7 @@ main {
 }
 
 .login-btn {
+    color: darkgray;
     font-size: 35px;
     margin-top: auto;
     margin-bottom: auto;
@@ -74,10 +77,31 @@ main {
     width: 100px;
 }
 
+.propaganda {
+    margin: 30px;
+    width: 90vw;
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    margin: 0px;
+    padding: 0px;
+    border-radius: 20px;
+    background-color: gray;
+}
+
 .produto {
-  width: 300px;
-  margin: 10px;
-  padding: 20px;
-  border: 1px solid #333;
-  text-align: center;
+    border-radius: 20px;
+    background-color: gray;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border: 2px solid #333;
+    text-align: center;
 }

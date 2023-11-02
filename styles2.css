@@ -1,25 +1,63 @@
-body {
-    display: flex;
-    justify-content: center;  
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+* {
+    box-sizing: border-box;
 }
 
-.container {
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background-image: url("./img/wallpaper.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
 }
 
-.login-form {
-    width: 300px;
+.page {
+    display: flex;
+    height: 91.2vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.title {
+    width: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.login {
+    background-color: darkgray;
+    text-align: center;
+    height: 350px;
+    width: 350px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-.form-group {
-    margin-bottom: 15px;
+.login-btn {
+    margin-top: 10px;
 }
 
 label {
@@ -49,5 +87,5 @@ button {
 }
 
 button:hover {
-background-color: #45a049;
+    background-color: #45a049;
 }
