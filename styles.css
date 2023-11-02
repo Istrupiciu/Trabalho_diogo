@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("./img/wallpaper.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+main {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.title {
+    width: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.pesquisa {
+    position: relative;
+    margin: auto;
+    margin-right: 0px;
+    height: 20px;
+    width: 500px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.pesquisar {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.login-btn {
+    font-size: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 220px;
+}
+
+.roupas {
+    width: 100px;
+}
+
+.produto {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #333;
+  text-align: center;
+}
