@@ -1,107 +1,125 @@
+/* Define o modelo de caixa para todos os elementos, incluindo a borda no cálculo do tamanho */
 * {
     box-sizing: border-box;
 }
 
+/* Estilo geral para o corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url("./img/wallpaper.svg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    font-family: Arial, sans-serif; /* Define a fonte principal */
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove preenchimento padrão do corpo */
+    background-color: lightgoldenrodyellow; /* Define a cor de fundo da página */
+    background-repeat: no-repeat; /* Impede a repetição do fundo */
+    background-attachment: fixed; /* Mantém o fundo fixo enquanto rola a página */
+    background-size: cover; /* Garante que o fundo cobre toda a área disponível */
 }
 
+/* Estilo para a barra de navegação */
 nav {
-    display: flex;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
+    display: flex; /* Usa o modelo de layout flexível */
+    background-color: #333; /* Define a cor de fundo da barra de navegação */
+    color: #fff; /* Define a cor do texto da barra de navegação */
+    padding: 10px; /* Adiciona preenchimento interno geral */
+    padding-left: 20px; /* Adiciona preenchimento à esquerda */
+    padding-right: 20px; /* Adiciona preenchimento à direita */
+    text-align: center; /* Centraliza o texto na barra de navegação */
+    height: 125px; /* Define a altura da barra de navegação */
 }
 
+/* Estilo para o cabeçalho principal */
 h1 {
-    margin: 0;
-    font-size: 24px;
+    margin: 0; /* Remove as margens padrão */
+    font-size: 24px; /* Define o tamanho da fonte */
 }
 
+/* Estilo para as seções da página */
 section {
-    max-width: 100vw;
-    padding: 20px;
-    justify-content: center;
+    max-width: 100vw; /* Garante que a largura máxima seja igual à largura da janela de visualização */
+    padding: 20px; /* Adiciona preenchimento interno geral */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 
+/* Estilo para as caixas de entrada de texto */
+input {
+    border: none; /* Remove a borda padrão */
+    margin: 0px; /* Remove as margens padrão */
+    width: 550px; /* Define a largura */
+    height: 40px; /* Define a altura */
+}
+
+/* Estilo para a logo */
 .logo {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    display: flex; /* Usa o modelo de layout flexível */
+    width: 250px; /* Define a largura */
+    border-radius: 50%; /* Cria uma borda circular */
 }
 
-.title {
-    width: 200px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
+/* Estilo para a área de pesquisa */
 .pesquisa {
-    margin: auto;
-    margin-right: 0px;
-    height: 35px;
-    width: 500px;
-    padding: 5px;
-    border-radius: 10px;
+    background-color: #fff; /* Define a cor de fundo */
+    margin: auto; /* Centraliza horizontalmente */
+    max-width: 600px; /* Define a largura máxima */
+    height: 40px; /* Define a altura */
 }
 
+/* Estilo para o botão de pesquisa */
 .pesquisar {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: auto;
-    height: 35px;
-    width: 35px;
-    padding: 5px;
-    border-radius: 10px;
+    background-color: #fff; /* Define a cor de fundo */
+    border: none; /* Remove a borda */
+    margin: 0px; /* Remove as margens padrão */
+    width: 45px; /* Define a largura */
+    height: 40px; /* Define a altura */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos na mudança de cor */
 }
 
+/* Efeito de hover para o botão de pesquisa */
+.pesquisar:hover {
+    background-color: #f0f0f0; /* Cor de fundo quando o mouse está sobre o botão */
+}
+
+/* Estilo para o botão de login */
 .login-btn {
-    color: darkgray;
-    font-size: 35px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 220px;
+    color: darkgray; /* Define a cor do texto */
+    font-size: 35px; /* Define o tamanho da fonte */
+    margin-top: auto; /* Alinha o topo ao máximo possível */
+    margin-bottom: auto; /* Alinha a parte inferior ao máximo possível */
+    margin-left: 220px; /* Adiciona margem à esquerda */
 }
 
+/* Estilo para a imagem de roupas */
 .roupas {
-    width: 100px;
+    width: 100px; /* Define a largura */
 }
 
+/* Estilo para a área de propaganda */
 .propaganda {
-    margin: 30px;
-    width: 90vw;
-    height: 60vh;
-    border-radius: 20px;
+    margin: 30px; /* Adiciona margem externa */
+    width: 90vw; /* Define a largura máxima relativa à largura da janela de visualização */
+    height: 60vh; /* Define a altura máxima relativa à altura da janela de visualização */
+    border-radius: 20px; /* Cria uma borda arredondada */
 }
 
+/* Estilo para a lista de produtos */
 .produtos {
-    display: flex;
-    justify-content: space-evenly;
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: space-evenly; /* Distribui os itens uniformemente ao longo do eixo principal */
 }
 
+/* Estilo para cada item da lista de produtos */
 .item {
-    margin: 0px;
-    padding: 0px;
-    border-radius: 20px;
-    background-color: gray;
+    margin: 0px; /* Remove as margens padrão */
+    padding: 0px; /* Remove o preenchimento padrão */
+    border-radius: 20px; /* Cria uma borda arredondada */
+    background-color: gray; /* Define a cor de fundo */
 }
 
+/* Estilo para cada produto na lista */
 .produto {
-    border-radius: 20px;
-    background-color: gray;
-    width: 300px;
-    height: 300px;
-    padding: 20px;
-    border: 2px solid #333;
-    text-align: center;
+    border-radius: 20px; /* Cria uma borda arredondada */
+    background-color: gray; /* Define a cor de fundo */
+    width: 300px; /* Define a largura */
+    height: 300px; /* Define a altura */
+    padding: 20px; /* Adiciona preenchimento interno */
+    border: 2px solid #333; /* Adiciona uma borda sólida */
+    text-align: center; /* Centraliza o texto */
 }
