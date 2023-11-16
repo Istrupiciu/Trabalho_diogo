@@ -8,10 +8,11 @@ body {
     font-family: Arial, sans-serif; /* Define a fonte principal */
     margin: 0; /* Remove margens padrão do corpo */
     padding: 0; /* Remove preenchimento padrão do corpo */
-    background-color: lightgoldenrodyellow; /* Define a cor de fundo da página */
+    background-image: url("./img/wallpaper.svg");
     background-repeat: no-repeat; /* Impede a repetição do fundo */
     background-attachment: fixed; /* Mantém o fundo fixo enquanto rola a página */
     background-size: cover; /* Garante que o fundo cobre toda a área disponível */
+    width: auto;
 }
 
 /* Estilo para a barra de navegação */
